@@ -1,8 +1,9 @@
 public class Printer {
 
     private int sheetsLeft;
-//    private int pages;
-//    private int copies;
+    private int pages;
+    private int copies;
+
 
 
     public Printer(int sheetsLeft) {
@@ -11,11 +12,16 @@ public class Printer {
     public int getsheetsLeft() {
          return sheetsLeft;
     }
+    public int pageCount() {
+        pages = 15;
+        copies = 15;
+        return this.pages;
+        return this.copies;
+    }
 
     }
 
-//    public int pageCount(int pages, int copies) {
-//            return pages;
+//
 
 
 

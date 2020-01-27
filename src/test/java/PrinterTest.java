@@ -10,16 +10,19 @@ public class PrinterTest {
     public void before() {
         printer = new Printer(100);
     }
+
     @Test
-    public void sheetsLeft(){
+    public void sheetsLeft() {
         assertEquals(100, printer.getsheetsLeft());
+    }
+
+    @Test
+    public void getpageCount() {
+        assertEquals(15,15, printer.pageCount());
     }
 }
 //
-//    @Test
-//    public void canAdd() {
-//        assertEquals(9, calculator.add(5, 4));
-//    }
+//
 
 //    @Test
 //    public void pageCount()
