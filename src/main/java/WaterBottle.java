@@ -1,6 +1,15 @@
 public class WaterBottle {
 
-    public class WaterBottleTest {
-        private WaterBottle = WaterBottle;
+private int volume;
+
+public WaterBottle(int volume){
+    this.volume = volume;
+    }
+    public int getVolume(){
+    return volume;
+    }
+    public int drink(){
+    return this.volume - 10;
     }
 }
+
