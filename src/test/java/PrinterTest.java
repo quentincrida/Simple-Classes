@@ -12,14 +12,22 @@ public class PrinterTest {
     }
 
     @Test
-    public void sheetsLeft() {
-        assertEquals(100, printer.getsheetsLeft());
+    public void getPrinterPaper() {
+        assertEquals(100, printer.getPaper());
     }
 
     @Test
-    public void getpageCount() {
-        assertEquals(15,15, printer.pageCount());
+    public void printerCanPrint__enoughPaper() {
+        printer.print(25, 2);
+        assertEquals(50, printer.getPaper());
     }
+
+    @Test
+    public void printerCanPrint__notEnoughPaper() {
+        printer.print(50,3);
+        assertEquals(100, printer.getPaper());
+    }
+
 }
 //
 //
